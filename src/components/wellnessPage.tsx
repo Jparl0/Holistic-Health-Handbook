@@ -1,5 +1,6 @@
 import React from 'react'
 
+
 type wellnessPageProp = {
     wellnessID: number
     wellnessName: string
@@ -8,14 +9,31 @@ type wellnessPageProp = {
 
  function wellnessPage(wellnessPage: wellnessPageProp): JSX.Element {
   const { wellnessID, wellnessName, wellnessValue} = wellnessPage
+
+  // const wellnessHeaderCss = css`
+  //   padding: 50px;
+  // `
+
   return (
     <div>
         <header>
           <h2> header here</h2>
         </header>
         <body>
-          <p>
+          {/*  */}
+          <h3 >
             {wellnessName}
+          </h3>
+
+          {/*  */}
+
+
+
+          {/*  */}
+
+
+          {/*  */}
+          <p>
           </p>
         </body>
         <footer>
