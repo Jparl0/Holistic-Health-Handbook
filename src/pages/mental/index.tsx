@@ -1,10 +1,13 @@
 import React from 'react'
+import WellnessPage from '../../components/wellnessPage'
 
 type Props = {}
 
-const index = (props: Props) => {
+function index (props: Props): JSX.Element {
   return (
-    <div>index</div>
+    <div>
+      <WellnessPage receivedWellnessPageProp={} />
+    </div>
   )
 }
 
