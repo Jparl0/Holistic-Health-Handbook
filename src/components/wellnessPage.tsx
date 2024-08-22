@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 type receivedWellnessPageProp = {
     wellnessID: number
     wellnessName: string
