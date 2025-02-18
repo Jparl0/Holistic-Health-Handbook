@@ -1,4 +1,5 @@
 import React from 'react'
+import { setWellnessType, wellnessType } from '../App'
 
 type receivedWellnessPageProp = {
     wellnessID: number
@@ -8,6 +9,15 @@ type receivedWellnessPageProp = {
 
  function wellnessPage(wellnessPage: receivedWellnessPageProp): JSX.Element {
   const { wellnessID, wellnessName, wellnessValue} = wellnessPage
+
+  function wellnessTypeChecker<>(){
+    if (wellnessType === "") {
+      throw Error 
+    }
+    if (wellnessType !== null) {
+      setWellnessType(wellnessName)
+    }
+  } 
 
   // const wellnessHeaderCss = css`
   //   padding: 50px;
